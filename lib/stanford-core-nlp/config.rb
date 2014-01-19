@@ -11,6 +11,8 @@ module StanfordCoreNLP
     }
 
     # Folders inside the JAR path for the models.
+    # added the new paths to the models folders
+    # as they are introduced in the new version 3.3.1
     ModelFolders = {
         :pos => 'edu/stanford/nlp/models/pos-tagger/english-left3words/',
       :parse => 'edu/stanford/nlp/models/lexparser/',
@@ -26,6 +28,9 @@ module StanfordCoreNLP
     }
     
     # Default models for all languages.
+    # change models here for their corresponding language
+    # need to download the specific model. I've used the english as the 
+    # default one!
     Models = {
       
       :pos => {
@@ -349,7 +354,7 @@ module StanfordCoreNLP
       'nlp.parser.lexparser.ParserAnnotations' => [
         'ConstraintAnnotation'
       ],
-
+      # removed the trees package after nlp
       'nlp.semgraph.SemanticGraphCoreAnnotations' => [
         'BasicDependenciesAnnotation',
         'CollapsedCCProcessedDependenciesAnnotation',

@@ -26,6 +26,7 @@ module StanfordCoreNLP
   StanfordCoreNLP.log_file = nil
 
   # Default JAR files to load.
+  # Added the stanford-corenlp-3.3.1.jar and -models.jar files
   StanfordCoreNLP.default_jars = [
     'joda-time.jar',
     'xom.jar',
@@ -174,6 +175,8 @@ module StanfordCoreNLP
     properties['sutime.binders'] = '0'
     
     # Manually include SUTime models.
+    # edited the sutime rules paths accrodingly 
+    # as they were introduced in the new version 3.3.1
     if annotators.include?(:ner)
       properties['sutime.rules'] = 
       self.model_path + 'edu/stanford/nlp/models/sutime/defs.sutime.txt, ' +
