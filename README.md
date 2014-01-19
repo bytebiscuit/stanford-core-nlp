@@ -15,6 +15,10 @@ Then unzip the stanford-corenlp-3.3.1-models.jar file by renaming it to stanford
 
 Place the contents of the extracted archive inside the /bin/ folder of the stanford-core-nlp gem (e.g. [...]/gems/stanford-core-nlp-0.x/bin/).
 
+In a terminal type: git clone https://github.com/bytebiscuit/stanford-core-nlp.git 
+
+Copy the files: stanford-core-nlp.rb and config.rb from the folder you cloned to their correponding folder in the stanford-core-nlp gem folder (e.g. [...]/gems/stanford-core-nlp-0.x/)
+
 **Configuration**
 
 You may want to set some optional configuration options. Here are some examples:
