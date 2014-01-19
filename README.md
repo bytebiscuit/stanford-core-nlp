@@ -8,10 +8,10 @@ This gem is compatible with Ruby 1.9.2 and 1.9.3 as well as JRuby 1.7.1. It is t
 
 **Installing**
 
-First, install the gem: `gem install stanford-core-nlp`. Then, download the Stanford Core NLP JAR and model files. Two packages are available:
+First, install the gem: `gem install stanford-core-nlp`. Then, download the Stanford Core NLP v3.3.1 JAR and model files from the following link:
+* [Download Stanford CoreNLP version 3.3.1](http://nlp.stanford.edu/software/stanford-corenlp-full-2014-01-04.zip)
 
-* A [minimal package](http://louismullie.com/treat/stanford-core-nlp-minimal.zip) with the default tagger and parser models for English, French and German.
-* A [full package](http://louismullie.com/treat/stanford-core-nlp-full.zip), with all of the tagger and parser models for English, French and German, as well as named entity and coreference resolution models for English.
+Then unzip the stanford-corenlp-3.3.1-models.jar file by renaming it to stanford-corenlp-3.3.1-models.zip and unzipping it. 
 
 Place the contents of the extracted archive inside the /bin/ folder of the stanford-core-nlp gem (e.g. [...]/gems/stanford-core-nlp-0.x/bin/).
 
