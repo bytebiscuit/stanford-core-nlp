@@ -29,9 +29,8 @@ module StanfordCoreNLP
   StanfordCoreNLP.default_jars = [
     'joda-time.jar',
     'xom.jar',
-    'stanford-parser.jar',
-    'stanford-corenlp.jar',
-    'stanford-segmenter.jar',
+    'stanford-corenlp-3.3.1.jar',
+    'stanford-corenlp-3.3.1-models.jar',
     'jollyday.jar',
     'bridge.jar'
   ]
@@ -177,8 +176,8 @@ module StanfordCoreNLP
     # Manually include SUTime models.
     if annotators.include?(:ner)
       properties['sutime.rules'] = 
-      self.model_path + 'sutime/defs.sutime.txt, ' +
-      self.model_path + 'sutime/english.sutime.txt'
+      self.model_path + 'edu/stanford/nlp/models/sutime/defs.sutime.txt, ' +
+      self.model_path + 'edu/stanford/nlp/models/sutime/english.sutime.txt'
     end
     
     props = get_properties(properties)
